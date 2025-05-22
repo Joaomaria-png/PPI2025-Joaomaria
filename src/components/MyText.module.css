@@ -1,0 +1,25 @@
+.div {
+  background-color: var(--prymary-contrast-active);
+  color: var(--text);
+  box-shadow: 0 0 1rem var(--prymary-contrast-active);
+  margin: 3rem 5rem;
+  padding: 3rem;
+  border-radius: 4rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 80rem;
+}

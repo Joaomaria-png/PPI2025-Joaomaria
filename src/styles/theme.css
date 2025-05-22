@@ -1,7 +1,8 @@
-:root{
---prymary-light: #d0f0f8ff;
---prymary-dark: #7fcad8ff;
---prymary-contrast-hover: #8fd8e6ff;
---prymary-contrast-active: #6bb9c9ff;
---prymary-contrast: #a3dbe7ff;
+:root {
+  --prymary-light: #d0f0f8ff;
+  --prymary-dark: #7fcad8ff;
+  --prymary-contrast-hover: #8fd8e6ff;
+  --prymary-contrast-active: #6bb9c9ff;
+  --prymary-contrast: #a3dbe7ff;
+  --text: #23404a;
 }
