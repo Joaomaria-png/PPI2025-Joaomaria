@@ -1,37 +1,49 @@
 import styles from "./MyTextList.module.css";
 import { MyText } from "./MyText";
 
-
-
 export function MyTextList() {
-    const texts = [
-  {
-    title: "Lorem ipsum dolor",
-    content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam totam eaque rerum aspernatur nihil, dicta nemo quisquam nostrum. Dolorem omnis voluptatibus adipisci laudantium voluptate explicabo nemo, aut at perferendis voluptatum!",
-  },
-  {
-    title: "sit amet consectetur",
-    content:
-      "sit amet consectetur, adipisicing elit. Nam totam eaque rerum aspernatur nihil, dicta nemo quisquam nostrum. Dolorem omnis voluptatibus adipisci laudantium voluptate explicabo nemo, aut at perferendis voluptatum!",
-  },
-  {
-    title: "adipisicing elit. Nam totam eaque",
-    content:
-      "adipisicing elit. Nam totam eaque rerum aspernatur nihil, dicta nemo quisquam nostrum. Dolorem omnis voluptatibus adipisci laudantium voluptate explicabo nemo, aut at perferendis voluptatum!",
-  },
-  
+  const texts = [
+    {
+      title: "Lorem ipsum dolor",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos excepturi ea enim odit vel et quia doloremque, nam accusantium eum blanditiis debitis natus inventore laborum magnam ipsum tempore itaque?",
+    },
+    {
+      title: "Quos, voluptatum debitis",
+      text: "Quos, voluptatum debitis, distinctio aut eaque ipsum impedit qui assumenda quis tempore libero voluptates dolore, vel inventore iste? Tempore magnam ut vero!",
+    },
+    {
+      title: "amet consectetur adipisicing",
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere sed veritatis officiis atque exercitationem vero sit necessitatibus deserunt, maxime ab expedita repellat impedit aut quae temporibus debitis voluptatem recusandae ratione.",
+    },
+    {
+      title: "Lorem ipsum dolor",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos excepturi ea enim odit vel et quia doloremque, nam accusantium eum blanditiis debitis natus inventore laborum magnam ipsum tempore itaque?",
+    },
+    {
+      title: "Quos, voluptatum debitis",
+      text: "Quos, voluptatum debitis, distinctio aut eaque ipsum impedit qui assumenda quis tempore libero voluptates dolore, vel inventore iste? Tempore magnam ut vero!",
+    },
+    // {
+    //   title: "amet consectetur adipisicing",
+    //   text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere sed veritatis officiis atque exercitationem vero sit necessitatibus deserunt, maxime ab expedita repellat impedit aut quae temporibus debitis voluptatem recusandae ratione.",
+    // },
+    // {
+    //   title: "Lorem ipsum dolor",
+    //   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos excepturi ea enim odit vel et quia doloremque, nam accusantium eum blanditiis debitis natus inventore laborum magnam ipsum tempore itaque?",
+    // },
+    // {
+    //   title: "Lorem ipsum dolor",
+    //   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos excepturi ea enim odit vel et quia doloremque, nam accusantium eum blanditiis debitis natus inventore laborum magnam ipsum tempore itaque?",
+    // },
+  ];
 
-];
   return (
     <div className={styles.container}>
-      <>
-        {texts.map((text, index) => (
-          <MyText key={index} title={`${index + 1} ${text.title}`}>
-            {text.content}
-          </MyText>
-        ))}
-      </>
+      {texts.map((text, index) => (
+        <MyText key={index} title={`${index + 1}. ${text.title}`}>
+          {text.text}
+        </MyText>
+      ))}
     </div>
   );
 }
