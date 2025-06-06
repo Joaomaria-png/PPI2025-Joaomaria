@@ -5,6 +5,7 @@ export function MyGrid() {
         <header1 className={styles.header1}/>
         <header2 className={styles.header2}/>
         <aside className={styles.aside}/>
+        <aside className={styles.aside2}/>
         <div className={styles.main}>
         <div className={styles.grid}>
           <div className={styles.card}>
@@ -18,10 +19,15 @@ export function MyGrid() {
         <div className={styles.card}>
                 <h1>Card 3</h1>
                 <p>This is the third card.</p>
+        <div className={styles.card}>
+                <h1>Card 4</h1>
+                <p>This is the fourth card.</p>
+        </div>
         </div>
         </div>
         </div>
         <footer className={styles.footer}/>
+        <footer className={styles.footer2}/>
     </div>
   );
 }
